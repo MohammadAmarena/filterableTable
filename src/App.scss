@@ -1,0 +1,38 @@
+body {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 2rem;
+    font-size: 1.5rem;
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      th {
+        border: 3px solid green;
+      }
+      td {
+        border: 3px solid rgb(207, 207, 41);
+        padding: 1rem;
+      }
+    }
+    .search-bar {
+      display: flex;
+      flex-flow: column;
+      input[type='search'] {
+        padding: 0.5rem;
+      }
+      lable {
+        color: red;
+        margin: 1rem;
+      }
+      input[type='checkbox'] {
+        font: inherit;
+        width: 1.15em;
+        height: 1.15em;
+        transform: translateY(0.2em);
+      }
+    }
+  }
+}
