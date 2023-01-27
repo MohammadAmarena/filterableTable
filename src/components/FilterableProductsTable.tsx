@@ -2,9 +2,9 @@ import { useState } from "react"
 import { ProductTable } from "./products/ProductTable"
 import { SearchBar } from "./products/SearchBar"
 
-export const FilterableProductTable = ({ products }) => {
-    const [filterText, setFilterText] = useState("")
-    const [inStockOnly, setInStockOnly] = useState(false)
+export const FilterableProductTable: any = ({ products }) => {
+    const [filterText, setFilterText] = useState<any>("")
+    const [inStockOnly, setInStockOnly] = useState<any>(false)
     
     return (
         <>

@@ -4,7 +4,7 @@ import pro from "./data.json"
 const App = () => {
 return (
   <div className="App">
-    <FilterableProductTable products={pro}/>
+    <FilterableProductTable products={pro as any}/>
   </div>
   )
 }

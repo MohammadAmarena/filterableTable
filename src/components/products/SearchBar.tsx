@@ -1,4 +1,4 @@
-export const SearchBar = ({filterText, inStockOnly, onFilterTextChange, onInStockOnlyChange}) => {
+export const SearchBar: any = ({filterText, inStockOnly, onFilterTextChange, onInStockOnlyChange}) => {
     return (
         <div className="search-bar">
         <input
@@ -6,13 +6,13 @@ export const SearchBar = ({filterText, inStockOnly, onFilterTextChange, onInStoc
             placeholder='Search'
             value={filterText}
             onChange={(e) => onFilterTextChange(e.target.value)} />
-        <lable>
+        <label>
             <input
             type='checkbox'
             value={inStockOnly}
             onChange={(e) => onInStockOnlyChange(e.target.checked)} />
             {' ' + 'Only show products in stock'}
-        </lable>
+        </label>
         </div>
     )
 }

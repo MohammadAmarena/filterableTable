@@ -1,12 +1,12 @@
 import { ProductCategoryRow } from "./product/ProductCategoryRow"
 import { ProductRow } from "./product/ProductRow"
 
-export const ProductTable = ({ products, filterText, inStockOnly }) => {
+export const ProductTable: any = ({ products, filterText, inStockOnly }) => {
 
-    const rows = []
+    const rows: any = []
     let lastCategory: null = null
 
-    products.forEach((product) => {
+    products.forEach((product: any) => {
         if (product.name.toLowerCase().indexOf(filterText.toLowerCase() ) === -1) {
             return
         }
